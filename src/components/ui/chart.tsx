@@ -40,6 +40,7 @@ const ChartContainer = React.forwardRef<
   const chartId = `chart-${id || uniqueId.replace(/:/g, "")}`;
 
   return (
+    // update the cart 
     <ChartContext.Provider value={{ config }}>
       <div
         data-chart={chartId}
